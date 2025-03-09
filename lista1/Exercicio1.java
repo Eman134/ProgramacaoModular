@@ -15,11 +15,6 @@ public class Exercicio1 {
         }
     }
 
-    public int fatorial(int numero) {
-        if (numero == 1) return 1;
-        else return fatorial(numero - 1) * numero;
-    }
-
     public void construirVetorB() {
         for (int i = 0; i < 15; i++) {
             int numero = vetorA[i];
@@ -31,6 +26,11 @@ public class Exercicio1 {
         for (int i = 0; i < 15; i++) {
             System.out.print(this.vetorB[i] + " ");
         }
+    }
+
+    public int fatorial(int numero) {
+        if (numero == 1) return 1;
+        else return fatorial(numero - 1) * numero;
     }
 
     public static void main(String[] args) {
